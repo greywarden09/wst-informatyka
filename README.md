@@ -1,2 +1,2 @@
 # wst-informatyka
-Repozytorium szkoleniowe
+W tym repozytorium wylądują różne aplikacje, notatki czy inne rzeczy związane z informatyką, programowaniem etc.
