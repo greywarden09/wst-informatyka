@@ -1,0 +1,2 @@
+# wst-informatyka
+Repozytorium szkoleniowe
