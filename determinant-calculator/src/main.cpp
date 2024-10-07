@@ -15,7 +15,10 @@ using String = std::string;
 template<typename T>
 T promptForInput(const String &, function<bool(T)>);
 
-extern double determinant(const Matrix &);
+namespace Laplace {
+    extern double determinant(const Matrix &);
+}
+
 
 int main() {
     const auto rank = promptForInput<uint32_t>("Matrix rank: ", [](const uint32_t &r) { return r > 1; });
@@ -28,7 +31,7 @@ int main() {
         }
     }
 
-    cout << std::format("det(A) = {}", determinant(matrix)) << endl;
+    cout << std::format("det(A) = {}", Laplace::determinant(matrix)) << endl;
 
     return 0;
 }
