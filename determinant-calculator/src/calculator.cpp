@@ -1,5 +1,5 @@
 #include <vector>
-#include <assert.h>
+#include <cassert>
 
 using Matrix = std::vector<std::vector<double> >;
 
