@@ -8,6 +8,7 @@ add_executable(data_structures src/main/main.cpp)
 
 add_library(data_structures_lib
         src/main/common/list.hpp
+        src/main/array_list/array_list.hpp
         src/main/linked_list/linked_list.hpp
 )
 set_target_properties(data_structures_lib PROPERTIES LINKER_LANGUAGE CXX)
