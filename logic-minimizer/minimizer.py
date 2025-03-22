@@ -1,5 +1,18 @@
 #!/usr/bin/env python3
 
+import subprocess
+import sys
+
+def ensure_package(pkg):
+    try:
+        __import__(pkg)
+    except ImportError:
+        print(f"[INFO] Installing missing package: {pkg}")
+        subprocess.check_call([sys.executable, "-m", "pip", "install", pkg])
+        globals()[pkg] = __import__(pkg)
+
+ensure_package("sympy")
+
 from sympy import symbols, SOPform, POSform, simplify_logic
 
 
