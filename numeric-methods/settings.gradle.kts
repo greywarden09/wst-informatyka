@@ -1,0 +1,1 @@
+rootProject.name = "numeric-methods"
