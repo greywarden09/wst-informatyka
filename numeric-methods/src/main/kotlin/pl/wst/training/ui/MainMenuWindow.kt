@@ -32,7 +32,7 @@ class MainMenuWindow(gui: MultiWindowTextGUI) : BasicWindow("Numerical Calculato
             addComponent(EmptySpace(TerminalSize(0, 1)))
 
             addComponent(Button("Single integral") { gui.addWindowAndWait(SingleIntegralWindow(gui)) })
-            addComponent(Button("Double integral") { DialogUtil.showInfo(gui, "Double integral selected") })
+            addComponent(Button("Double integral") { gui.addWindowAndWait(DoubleIntegralWindow(gui)) })
             addComponent(Button("Numerical derivative") { DialogUtil.showInfo(gui, "Numerical derivative selected") })
 
             addComponent(EmptySpace(TerminalSize(0, 1)))
